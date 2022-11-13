@@ -1,0 +1,40 @@
+Objectives:
+1. Understand how to use Tensorflow Eager and Keras Layers to build a neural network architecture.
+2. Understand how a model is trained and evaluated.
+3. Identify digits from images. 
+4. Our main goal is to train a neural network (using Keras) to obtain > 90% accuracy on MNIST 
+dataset.
+5. Research at least 1 technique that can be used to improve model generalization.
+
+
+Solution Expected:
+Implement and train a feed-forward neural network (also known as an "MLP" for "multi-layer 
+perceptron") on a dataset called MNIST and improve model generalization by achieving increased 
+accuracy and decrease loss where model gains good confidence with the prediction.
+
+Theory:
+Feed Forward Network:-
+A Feed Forward Neural Network is an artificial Neural Network in which the nodes are connected circularly.
+A feed-forward neural network, in which some routes are cycled, is the polar opposite of a Recurrent Neural Network.
+The feed-forward model is the basic type of neural network because the input is only processed in one direction.
+The data always flows in one direction and never backwards/opposite.
+
+Keras:-Keras is an API designed for human beings, not machines.
+Keras follows best practices for reducing cognitive load: it offers consistent & simple APIs,
+it minimizes the number of user actions required for common use cases, and it provides clear & actionable error messages.
+It also has extensive documentation and developer guides.
+(TensorFlow is an open-source platform for machine learning. Keras is the high-level application 
+programming interface (API) of TensorFlow. Using Keras, we can rapidly develop a prototype system and 
+test it out. This is the first in a three-part series on using TensorFlow for supervised classification tasks.)
+
+
+TenserFlow:-
+In the context of ML, a tensor is a multidimensional array, which in its simplest form is a scalar. Vectors 
+and matrices are special cases of tensors. In TensorFlow, a tensor is a data structure. It is a 
+multidimensional array composed of elements of the same type. Tensors are used to encapsulate all inputs 
+and outputs to a deep learning network. The training dataset and each test example has to be cast as a 
+tensor. All operations within the layers of the network are also performed on tensors.
+Layers IN tenserflow:-
+1. Flatten layer:-This layer flattens an input tensor without changing its values.
+2. Dense layer:-The dense layer is the fully connected, feedforward layer of a neural network.
+

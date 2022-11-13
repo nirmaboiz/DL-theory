@@ -1,0 +1,55 @@
+Theory:-
+1)What is Transfer learning ?
+Transfer learning is the application of knowledge gained from completing one task to help solve a different, but related, problem.
+
+2) What are pretrained Neural Network models ?
+Pre-trained neural network models are just models trained on one task and then used in a different task.
+To pre-train a neural network, we shall have an initial model and a dataset to train.
+The three main applications of pre-trained models are found in transfer learning, feature extraction, and classification
+Steps/ Algorithm
+
+3) Explain Pytorch library in short.
+PyTorch is a machine learning framework based on the Torch library, used for applications such as
+computer vision and natural language processing, originally developed by Meta AI and now part of the Linux Foundation umbrella.
+It is free and open-source software released under the modified BSD license.
+
+4) What are advantages of Transfer learning.
+Transfer learning has several benefits, but the main advantages are saving training time,
+ better performance of neural networks (in most cases), and not needing a lot of data.
+
+5) What are disadvantages of Transfer learning.
+This only occurs if the source and target are not similar enough, causing the first round of training to be too far off.
+ Algorithms don't have to always agree with what we deem as similar,
+ making it difficult to understand the fundamentals and standards of what type of training is sufficient
+
+6) What are applications of Transfer learning.
+Transfer learning allows for sentiment analysis with augmented data as well as little to no labeling having been done for the data.
+ Just like transformers aim to solve sequence-to-sequence tasks,
+ transfer learning takes the sentiment analytics report generated from one task and extends it to another
+
+1. Dataset link and libraries :
+1) Prepare the dataset in splitting in three directories Train , alidation and test with 50 25 25
+2) Do pre-processing on data with transform from PytorchTraining dataset transformation
+3) Create Datasets and 
+Loaders 
+4) Load Pretrain Model : from torchvision import models
+5) Freez all the Models Weight
+6) Add our own custom classifier with following parameters 
+7) Only train the sixth layer of classifier keep remaining layers 
+off .Sequential
+8) Initialize the loss and 
+optimizercriteration
+9) Train the model using 
+Pytorch for epoch in 
+range
+10) Perform Early stopping
+11) Draw performance curve
+66
+12) Calculate Accuracy
+
+Conclusion: In this experiment, we were able to see the basics of using PyTorch as well as the 
+concept of transfer learning, an effective method for object recognition. Instead of training a model 
+from scratch, we can use existing architectures that have been trained on a large dataset and then tune 
+them for our task. This reduces the time to train and often results in better overall performance. The 
+outcome of this experiment is knowledge of transfer learning and PyTorch that we can build on to 
+build more complex applications.

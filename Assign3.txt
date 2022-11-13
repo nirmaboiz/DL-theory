@@ -1,0 +1,74 @@
+Objective: 
+1. To be able to apply deep learning algorithms to solve problems of moderate complexity
+2. Understand how a model is trained and evaluated.
+3. Classifying images from the image dataset.
+4. Our main goal is to train a neural network (using Keras) to obtain > 90% accuracy on image 
+dataset..
+5. To apply the algorithms to a real-world problem, optimize the models learned and report on 
+the expected accuracy that can be achieved by applying the models
+
+Outcomes: At the end of the assignment the students should able
+1. Learn and Use various Deep Learning tools and packages.
+2. Build and train a deep Neural Network models for use in various applications.
+3. Apply Deep Learning techniques like CNN, RNN Auto encoders to solve real word 
+Problems. 
+4. Evaluate the performance of the model build using Deep Learning.
+
+Theory:
+Deep Learning has been proved that its a very powerful tool due to its ability to handle huge amounts of 
+data. The use of hidden layers exceeds traditional techniques, especially for pattern recognition. One of the 
+most popular Deep Neural Networks is Convolutional Neural Networks (CNN).
+
+A convolutional neural network (CNN) is a type of Artificial Neural Network (ANN) used in image 
+recognition and processing which is specially designed for processing data (pixels). The goal of a CNN is 
+to learn higher-order features in the data via convolutions
+
+With CNNs, we can arrange the neurons in a three-dimensional structure for 
+which we have the following:
+Width
+Height
+Depth
+These attributes of the input match up to an image structure for which we have:
+Image width in pixels
+Image height in pixels
+RGB channels as the depth
+
+CNN Architecture Overview:
+CNNs transform the input data from the input layer through all connected layers into a set of class scores 
+given by the output layer.
+
+1. Input layer
+The input layer accepts three-dimensional input generally in the form spatially of the size (width × height) 
+of the image and has a depth representing the color channels (generally three for RGB color channels)
+
+2. Feature-extraction (learning) layers
+We express the Rectified Linear Unit (ReLU) activation function as a layer in the diagram in figure 1. 
+Convolutional layers transform the input data by using a patch of locally connecting neurons from the 
+previous layer.
+
+A. Pooling layer
+These layers find a number of features in the images and progressively construct higher-order features. This 
+corresponds directly to the ongoing theme in deep learning by which features are automatically learned as 
+opposed to traditionally hand engineered.
+
+3. Classification layers
+Finally we have the classification layers in which we have one or more fully connected layers to take the 
+higher-order features and produce class probabilities or scores.
+
+Multilayer neural networks vs CNN:
+
+In traditional multilayer neural networks, the layers are fully connected and every neuron in a layer is 
+connected to every neuron in the next layer whereas The neurons in the layers of a CNN are arranged in 
+three dimensions to match the input volumes.
+Input Layers
+Input layers are where we load and store the raw input data of the image for processing in the network. This 
+input data specifies the width, height, and number of channels. Typically, the number of channels is three, 
+for the RGB values for each pixel.
+
+Convolutional Layers
+Convolutional layers are considered the core building blocks of CNN architectures. As Figure 2 illustrates, 
+convolutional layers transform the input data by using a patch of locally connecting neurons from the 
+previous layer. The layer will compute a dot product between the region of the neurons in the input layer 
+and the weights to which they are locally connected in the output layer
+"Convolution Operation involves matrix arithmetic operations and every image is represented in the form of 
+an array of values(pixels)."

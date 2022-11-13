@@ -1,0 +1,38 @@
+theory:-
+What is NLP?
+Natural language processing (NLP) is the ability of a computer program to understand human language as it is spoken and written 
+
+What is Word embedding related to NLP ?
+Word embedding in NLP is an important term that is used for representing words for text analysis in the form of real-valued vectors.
+It is an advancement in NLP that has improved the ability of computers to understand text-based content in a better way.
+
+Explain Word2Vec techniques.
+Word2Vec is a method to construct such an embedding.
+It can be obtained using two methods (both involving Neural Networks): Skip Gram and Common Bag Of Words (CBOW) CBOW Model:
+This method takes the context of each word as the input and tries to predict the word corresponding to the context.
+
+Continuous Bag of Words Model (CBOW) and Skip-gram
+In the CBOW model, the distributed representations of context (or surrounding words) are combined to predict the word in the middle .
+While in the Skip-gram model, the distributed representation of the input word is used to predict the context 
+Steps/ Algorithm
+1. Dataset link and libraries :
+Create any English 5 to 10 sententece paragraph 
+a) Import following libraries gemsim and numpy set i.e. text file created . It 
+should bepreprocessed.
+b) Tokenize the every word from the paragraph . You can call in built tokenizer
+present inGensim
+c) Fit the data to tokenizer
+d) Find total no of words and total no of sentences.
+e) Generate the pairs of Context words and target words :
+e.g. cbow_model
+f) Create Neural Network model with following parameters . Model type : sequential
+Layers : Dense , Lambda , embedding
+g) Create vector file of some word for 
+testinge.g.:dimensions=100
+h) Assign weights to your trained model
+e.g. weights = model.get_weights()[0]
+i) Use the vectors created in Gemsim :
+
+Conclusion: In this experiment, we saw what a CBOW model is and how it works. We also 
+implemented the model on a custom dataset and got good output. We learnt what word embeddings 
+are and how CBOW is useful. These can be used for text recognition, speech to text conversion etc
